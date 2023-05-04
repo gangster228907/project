@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+  <meta name="yandex-verification" content="3c6e1d4984cbafae">
+  <meta name="google-site-verification" content="F89rXTMXRgew2SWiZ7CaN9ruT76FMNnaypsfFoU1fGA">
+  <meta name="google-site-verification" content="muTMJ-pbpCyrKdDnWIfyxmHg1-yf_3KstSCV6W1E2VU">
+  <script src="https://www.googleoptimize.com/optimize.js?id=GTM-NTN8ZRX"></script>
+  <script>
+    var APP_WP_BASE = 'https://selectel.ru/blog'
+  </script>
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<title>3</title>
+	<meta name="description" content="Открытая сетевая модель OSI (Open Systems Interconnection model) состоит из семи уровней. Что это за уровни и как все устроено — расскажем в статье." />
+	<meta property="og:locale" content="ru_RU" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Модель OSI. 7 уровней сетевой модели OSI с примерами" />
+	<meta property="og:description" content="Открытая сетевая модель OSI (Open Systems Interconnection model) состоит из семи уровней. Что это за уровни и как все устроено — расскажем в статье." />
+	<meta property="og:url" content="https://selectel.ru/blog/osi-for-beginners/" />
+	<meta property="og:site_name" content="Академия Selectel" />
+	<meta property="article:published_time" content="2020-12-07T06:54:16+00:00" />
+	<meta property="article:modified_time" content="2023-03-13T22:51:41+00:00" />
+	<meta property="og:image" content="https://selectel.ru/blog/wp-content/uploads/2020/12/MD-184_OSI-1.png" />
+	<meta property="og:image:width" content="1480" />
+	<meta property="og:image:height" content="880" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Написано автором">
+	<meta name="twitter:data1" content="T-Rex">
+	<meta name="twitter:label2" content="Примерное время для чтения">
+	<meta name="twitter:data2" content="9 минут">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://selectel.ru/blog/#website","url":"https://selectel.ru/blog/","name":"\u0410\u043a\u0430\u0434\u0435\u043c\u0438\u044f Selectel","description":"\u041e\u0431\u0440\u0430\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0435 \u0441\u0442\u0430\u0442\u044c\u0438 \u0438 \u0438\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0438\u0438, \u0431\u0435\u0441\u043f\u043b\u0430\u0442\u043d\u044b\u0435 \u043a\u0443\u0440\u0441\u044b \u0438 \u043b\u0443\u0447\u0448\u0438\u0435 \u043f\u0440\u0430\u043a\u0442\u0438\u043a\u0438 \u043e\u0442 \u0432\u0435\u0434\u0443\u0449\u0435\u0433\u043e \u043f\u0440\u043e\u0432\u0430\u0439\u0434\u0435\u0440\u0430 IT-\u0438\u043d\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u044b.","potentialAction":[{"@type":"SearchAction","target":"https://selectel.ru/blog/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"ru-RU"},{"@type":"ImageObject","@id":"https://selectel.ru/blog/osi-for-beginners/#primaryimage","inLanguage":"ru-RU","url":"https://selectel.ru/blog/wp-content/uploads/2020/12/MD-184_OSI-1.png","contentUrl":"https://selectel.ru/blog/wp-content/uploads/2020/12/MD-184_OSI-1.png","width":1480,"height":880},{"@type":"WebPage","@id":"https://selectel.ru/blog/osi-for-beginners/#webpage","url":"https://selectel.ru/blog/osi-for-beginners/","name":"\u041c\u043e\u0434\u0435\u043b\u044c OSI. 7 \u0443\u0440\u043e\u0432\u043d\u0435\u0439 \u0441\u0435\u0442\u0435\u0432\u043e\u0439 \u043c\u043e\u0434\u0435\u043b\u0438 OSI \u0441 \u043f\u0440\u0438\u043c\u0435\u0440\u0430\u043c\u0438","isPartOf":{"@id":"https://selectel.ru/blog/#website"},"primaryImageOfPage":{"@id":"https://selectel.ru/blog/osi-for-beginners/#primaryimage"},"datePublished":"2020-12-07T06:54:16+00:00","dateModified":"2023-03-13T22:51:41+00:00","author":{"@id":"https://selectel.ru/blog/#/schema/person/f15eb7d9d254641d98ddeb7d9a8a84f6"},"description":"\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f \u0441\u0435\u0442\u0435\u0432\u0430\u044f \u043c\u043e\u0434\u0435\u043b\u044c OSI (Open Systems Interconnection model) \u0441\u043e\u0441\u0442\u043e\u0438\u0442 \u0438\u0437 \u0441\u0435\u043c\u0438 \u0443\u0440\u043e\u0432\u043d\u0435\u0439. \u0427\u0442\u043e \u044d\u0442\u043e \u0437\u0430 \u0443\u0440\u043e\u0432\u043d\u0438 \u0438 \u043a\u0430\u043a \u0432\u0441\u0435 \u0443\u0441\u0442\u0440\u043e\u0435\u043d\u043e \u2014 \u0440\u0430\u0441\u0441\u043a\u0430\u0436\u0435\u043c \u0432 \u0441\u0442\u0430\u0442\u044c\u0435.","breadcrumb":{"@id":"https://selectel.ru/blog/osi-for-beginners/#breadcrumb"},"inLanguage":"ru-RU","potentialAction":[{"@type":"ReadAction","target":["https://selectel.ru/blog/osi-for-beginners/"]}]},{"@type":"BreadcrumbList","@id":"https://selectel.ru/blog/osi-for-beginners/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://selectel.ru/blog/","url":"https://selectel.ru/blog/","name":"\u0413\u043b\u0430\u0432\u043d\u0430\u044f \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://selectel.ru/blog/osi-for-beginners/","url":"https://selectel.ru/blog/osi-for-beginners/","name":"\u041f\u0440\u043e\u0441\u0442\u043e\u0435 \u043f\u043e\u0441\u043e\u0431\u0438\u0435 \u043f\u043e \u0441\u0435\u0442\u0435\u0432\u043e\u0439 \u043c\u043e\u0434\u0435\u043b\u0438 OSI \u0434\u043b\u044f \u043d\u0430\u0447\u0438\u043d\u0430\u044e\u0449\u0438\u0445"}}]},{"@type":"Person","@id":"https://selectel.ru/blog/#/schema/person/f15eb7d9d254641d98ddeb7d9a8a84f6","name":"T-Rex","image":{"@type":"ImageObject","@id":"https://selectel.ru/blog/#personlogo","inLanguage":"ru-RU","url":"https://selectel.ru/blog/wp-content/uploads/2023/05/T-Rex_Autor-3-96x96.png","contentUrl":"https://selectel.ru/blog/wp-content/uploads/2023/05/T-Rex_Autor-3-96x96.png","caption":"T-Rex"}}]}</script>
+
+
+<link rel='stylesheet' id='wp-block-library-css'  href='https://selectel.ru/blog/wp-includes/css/dist/block-library/style.min.css?ver=5.9.5' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='wordpress-popular-posts-css-css'  href='https://selectel.ru/blog/wp-content/plugins/wordpress-popular-posts/assets/css/wpp.css?ver=5.4.2' media='all' />
+<link rel='stylesheet' id='style-css'  href='https://selectel.ru/blog/wp-content/themes/selectel-academy/dist/css/app.css?ver=1.0.0' media='all' />
+<script id='wpp-json' type="application/json">
+{"sampling_active":0,"sampling_rate":100,"ajax_url":"https:\/\/selectel.ru\/blog\/wp-json\/wordpress-popular-posts\/v1\/popular-posts","api_url":"https:\/\/selectel.ru\/blog\/wp-json\/wordpress-popular-posts","ID":15660,"token":"8b68f16848","lang":0,"debug":0}
+</script>
+<script src='https://selectel.ru/blog/wp-content/plugins/wordpress-popular-posts/assets/js/wpp.min.js?ver=5.4.2' id='wpp-js-js'></script>
+        <style>
+
+            @-webkit-keyframes bgslide {
+
+                from {
+
+                    background-position-x: 0;
+
+                }
+
+                to {
+
+                    background-position-x: -200%;
+
+                }
+
+            }
+
+
+
+            @keyframes bgslide {
+
+                    from {
+
+                        background-position-x: 0;
+
+                    }
+
+                    to {
+
+                        background-position-x: -200%;
+
+                    }
+
+            }
+
+
+
+            .wpp-widget-placeholder {
+
+                margin: 0 auto;
+
+                width: 60px;
+
+                height: 3px;
+
+                background: #dd3737;
+
+                background: -webkit-gradient(linear, left top, right top, from(#dd3737), color-stop(10%, #571313), to(#dd3737));
+
+                background: linear-gradient(90deg, #dd3737 0%, #571313 10%, #dd3737 100%);
+
+                background-size: 200% auto;
+
+                border-radius: 3px;
+
+                -webkit-animation: bgslide 1s infinite linear;
+
+                animation: bgslide 1s infinite linear;
+
+            }
+			#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 5px;
+  left: 5%;
+  
+  z-index: 2;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #red;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #green;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+        </style>
+
+        <link rel="canonical" href="https://selectel.ru/blog/osi-for-beginners/">
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KHBTWL7');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <script>
+    !function (t, e) {
+      var o, n, p, r;
+      e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) {
+        function g(t, e) {
+          var o = e.split(".");
+          2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () {
+            t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+          }
+        }
+
+        (p = t.createElement("script")).type = "text/javascript", p.async = !0, p.src = s.api_host + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r);
+        var u = e;
+        for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) {
+          var e = "posthog";
+          return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+        }, u.people.toString = function () {
+          return u.toString(1) + ".people (stub)"
+        }, o = "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "), n = 0; n < o.length; n++) g(u, o[n]);
+        e._i.push([i, s, a])
+      }, e.__SV = 1)
+    }(document, window.posthog || []);
+    posthog.init('phc_eBTTWO99HQkIfVXSqLlObOcmLhUxPRPbB3n1LKiL1iY', {
+      api_host: 'https://hog.selectel.ru',
+      autocapture: false
+    })
+  </script>
+</head>
+<body class="main-body">
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHBTWL7" height="0" width="0"
+          style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="header">
+  <div class="header_body">
+    <div class="header-left">
+      
+        
+      <nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Info</li></a>
+      <a href="#"><li>Contact</li></a>
+      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+    </ul>
+  </div>
+</nav>
+    
+
+    <div class="header-right">
+      
+      
+      
+        
+  </div>
+
+  <div class="menu-mobile">
+    <div class="menu-mobile_overlay"></div>
+
+    <div class="wrapper">
+      <div class="menu-mobile_inner">
+        <button class="menu-mobile_close-btn"></button>
+        <div class="menu-mobile_header">
+          <nav class="menu-mobile_nav">
+            <ul class="menu-mobile_list">
+              <li
+                class="menu-mobile_list-item ">
+                <a href="https://selectel.ru/blog/all/">Блог</a>
+              </li>
+
+              <li class="menu-mobile_list-item __active">
+                <a href="https://selectel.ru/blog/courses/">Курсы</a>
+              </li>
+              <li class="menu-mobile_list-item ">
+                <a href="https://selectel.ru/blog/events/">Мероприятия</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-mobile_body">
+          <div class="menu-mobile_content">
+            
+<nav class="article-sidebar">
+      <ul class="article-sidebar__wrapper info-page_sidebar-block">
+      <li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="file:///F:/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20(5)/123%D1%84%D1%84%D1%84%D1%84%D1%84%D1%84%D1%8441.html">
+            <div class="article-sidebar_number __active">1</div>
+      <p class="article-sidebar_text f-18">Принцип устройства сетевой модели</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="file:///F:/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20(5)/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%201.html">
+            <div class="article-sidebar_number __active">2</div>
+      <p class="article-sidebar_text f-18">Первый, физический уровень (physical layer, L1)</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="file:///F:/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20(5)/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%202.html">
+            <div class="article-sidebar_number __active">3</div>
+      <p class="article-sidebar_text f-18">Второй уровень, канальный (data link layer, L2)</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="file:///F:/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20(5)/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%203.html">
+            <div class="article-sidebar_number __active">4</div>
+      <p class="article-sidebar_text f-18"><font  color="red">Третий уровень, сетевой (network layer, L3)</font></p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#transport-layer">
+            <div class="article-sidebar_number __active">5</div>
+      <p class="article-sidebar_text f-18">Четвертый уровень, транспортный (transport layer, L4)</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#session-layer">
+            <div class="article-sidebar_number __active">6</div>
+      <p class="article-sidebar_text f-18">Пятый уровень, сеансовый (session layer, L5)</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#presentation-layer">
+            <div class="article-sidebar_number __active">7</div>
+      <p class="article-sidebar_text f-18">Шестой уровень, представления данных (presentation layer, L6)</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#application-layer">
+            <div class="article-sidebar_number __active">8</div>
+      <p class="article-sidebar_text f-18">Седьмой уровень, прикладной (application layer)</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#critic">
+            <div class="article-sidebar_number __active">9</div>
+      <p class="article-sidebar_text f-18">Критика модели OSI</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#exit">
+            <div class="article-sidebar_number __active">10</div>
+      <p class="article-sidebar_text f-18">Вывод, роль модели OSI при построении сетей</p>
+          </a></li>    </ul>
+
+        
+
+   
+</nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="search-modal" id="search-modal"></div>
+
+  <div class="modal-subscribe">
+    <div class="modal-subscribe_content-block">
+      <div class="modal-subscribe_close"></div>
+      
+        <form class="form js-form-subscribe" data-form=""
+            novalidate>
+      <!--      data-endpoint="--><!--" TODO Вкорячить эндпоинт-->
+
+      <div class="form_text-block">
+        
+      </div>
+      <div class="form_right-block">
+        <div class="form_input-block">
+          <div class="form_error-text js-input-error-email"></div>
+          <input class="form_input-email" type="email" name="email"
+                 placeholder="Email" required>
+          <button class="form_btn-submit round-btn round-btn_dark" type="submit">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path
+                d="M11.207 1.37484e-06L9.96476 1.18388L17.7621 8.61461C17.9736 8.81612 17.815 9.16877 17.4978 9.16877L-4.35546e-07 9.16877L-3.68695e-07 10.8312L17.4978 10.8312C17.815 10.8312 17.9736 11.1839 17.7357 11.4106L9.96476 18.8161L11.207 20C11.207 20 20.2731 11.3602 20.4846 11.1839C21.1718 10.529 21.1718 9.49622 20.4846 8.84131C20.2731 8.6398 11.207 1.37484e-06 11.207 1.37484e-06Z"
+                fill=""></path>
+            </svg>
+          </button>
+        </div>
+        <div class="checkbox__error js-input-error-subscription" style="margin-left: 4.1rem"></div>
+        <div class="form_confirm-block">
+          <div class="form_confirm-input">
+            <input class="form_confirm-input-checkbox" required type="checkbox"
+                   name="subscription">
+            <div class="form_confirm-checkbox"></div>
+          </div>
+          <label for="emailRequest" class="f-14"><a href="/#">Соглашаюсь</a> на получение новостной рассылки <br>в
+            соответствии с <a href="">Политикой</a></label>
+        </div>
+        <div class="form_success-text f-24" style="display: none">
+          Спасибо! Осталось подтвердить подписку. Мы отправили вам письмо с&nbsp;сылкой на почту.
+        </div>
+
+        <div class="form_all-error-text f-24" style="display: none">
+          Ошибка отправки <br>Перезагрузите страницу и отправьте форму еще раз.
+        </div>
+      </div>
+      </form>
+      
+
+    </div>
+  </div>
+</header>
+<main class="main">
+
+  <section class="wrapper article">
+    <div class="modal-img">
+      <div class="modal-img_content-block">
+        <div class="modal-img_close"></div>
+        <img class="modal-img_img" src="./" alt="описание картинки">
+        <p class="modal-img_img-name f-14"></p>
+      </div>
+    </div>
+    <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Selectel">
+      <div itemprop="logo" itemtype="http://schema.org/ImageObject" itemscope>
+        <meta itemprop="url" content="https://selectel.ru/blog/wp-content/themes/selectel-academy/dist/icons/header/main-logo.svg">
+        <meta itemprop="width" content="134">
+        <meta itemprop="height" content="27">
+      </div>
+    </div>
+    <meta content="2020-12-07T09:54:16+03:00" itemprop="datePublished">
+    <meta content="2023-03-14T01:51:41+03:00" itemprop="dateModified">
+
+    <div class="info-page_wrapper">
+      
+<nav class="article-sidebar">
+      <ul class="article-sidebar__wrapper info-page_sidebar-block">
+      <li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="file:///F:/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20(5)/123%D1%84%D1%84%D1%84%D1%84%D1%84%D1%84%D1%8441.html">
+            <div class="article-sidebar_number __active">1</div>
+      <p class="article-sidebar_text f-18">Принцип устройства сетевой модели</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="file:///F:/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20(5)/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%201.html">
+            <div class="article-sidebar_number __active">2</div>
+      <p class="article-sidebar_text f-18">Первый, физический уровень (physical layer, L1)</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="file:///F:/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20(5)/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%202.html">
+            <div class="article-sidebar_number __active">3</div>
+      <p class="article-sidebar_text f-18">Второй уровень, канальный (data link layer, L2)</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="file:///F:/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0%20(5)/%D0%BD%D0%BE%D0%B2%D1%8B%D0%B9%203.html">
+            <div class="article-sidebar_number __active">4</div>
+      <p class="article-sidebar_text f-18"><font  color="red">Третий уровень, сетевой (network layer, L3)</font></p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#transport-layer">
+            <div class="article-sidebar_number __active">5</div>
+      <p class="article-sidebar_text f-18">Четвертый уровень, транспортный (transport layer, L4)</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#session-layer">
+            <div class="article-sidebar_number __active">6</div>
+      <p class="article-sidebar_text f-18">Пятый уровень, сеансовый (session layer, L5)</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#presentation-layer">
+            <div class="article-sidebar_number __active">7</div>
+      <p class="article-sidebar_text f-18">Шестой уровень, представления данных (presentation layer, L6)</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#application-layer">
+            <div class="article-sidebar_number __active">8</div>
+      <p class="article-sidebar_text f-18">Седьмой уровень, прикладной (application layer)</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#critic">
+            <div class="article-sidebar_number __active">9</div>
+      <p class="article-sidebar_text f-18">Критика модели OSI</p>
+          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="#exit">
+            <div class="article-sidebar_number __active">10</div>
+      <p class="article-sidebar_text f-18">Вывод, роль модели OSI при построении сетей</p>
+          </a></li>    </ul>
+
+        
+</nav>
+
+      <div class="info-page_content">
+        
+<section class="article-content">
+  <div class="article-content_header">
+    <div class="">
+      
+     <h2 id="network-layer">Третий уровень, сетевой (network layer, L3)</h2>
+            
+    </div>
+	
+         
+        <div class="banner_btn-block">
+          
+          <div class="round-btn round-btn_transparent round-btn_link">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+              <path
+                d="M11.207 1.37484e-06L9.96476 1.18388L17.7621 8.61461C17.9736 8.81612 17.815 9.16877 17.4978 9.16877L-4.35546e-07 9.16877L-3.68695e-07 10.8312L17.4978 10.8312C17.815 10.8312 17.9736 11.1839 17.7357 11.4106L9.96476 18.8161L11.207 20C11.207 20 20.2731 11.3602 20.4846 11.1839C21.1718 10.529 21.1718 9.49622 20.4846 8.84131C20.2731 8.6398 11.207 1.37484e-06 11.207 1.37484e-06Z"
+                fill=""></path>
+            </svg>
+          </div>
+        </div>
+      </a>
+      </div>
+
+   
+    
+  <div class="article-content_content">
+    
+
+
+
+
+
+<p>На третьем уровне появляется новое понятие — маршрутизация. Для этой задачи были созданы устройства третьего уровня — маршрутизаторы (их еще называют роутерами). Маршрутизаторы получают MAC-адрес от коммутаторов с предыдущего уровня и занимаются построением маршрута от одного устройства к другому с учетом всех потенциальных неполадок в сети.</p>
+
+<p>Маршрутизаторы позволяют разным сетям общаться друг с другом: они используют MAC-адреса, чтобы построить путь от одного устройства к другому.
+
+Данные на сетевом уровне представляются в виде пакетов. Такие пакеты похожи на фреймы из канального уровня, но используют другие адреса получателя и отправителя — IP-адреса.
+
+Чтобы получить IP-адрес обоих устройств (отправителя и получателя), используется протокол ARP (Address Resolution Protocol). Он умеет конвертировать MAC- в IP-адрес и наоборот.</p>
+
+<img  src="https://skillbox.ru/upload/setka_images/12563401092022_08fda0244b5397e030ee401fd2bea5b24f78a72b.jpg"
+width="50%"
+height="50%"
+           alt="Изображение записи">
+
+
+
+
+</section>
+
+
+  <div class="course-change">
+
+    
+            
+      
+    
+            
+            </div>
+
+
+
+        
+      
+
+      </div>
+
+      <div id="js-post-end"></div>
+      <script>
+        (function () {
+          const postFooter = document.querySelector('#js-post-end')
+
+          if (postFooter) {
+            const observer = new IntersectionObserver(([entry]) => {
+              if (entry.isIntersecting) {
+                localStorage.setItem('post_15660', 'true')
+              }
+            })
+            observer.observe(postFooter)
+          }
+        })()
+      </script>
+    </div>
+      
+</article>
+      </div>
+          <div>
+        <
+</article>
+      </div>
+          <div>
+       
+</article>
+      </div>
+      </div>
+  
+  </section>
+
+</main>

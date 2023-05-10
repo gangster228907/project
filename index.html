@@ -106,12 +106,12 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                 animation: bgslide 1s infinite linear;
 
             }
-			#menuToggle
+			 #menuToggle
 {
   display: block;
   position: relative;
   top: 5px;
-  left: 5%;
+  right: 100%
   
   z-index: 2;
   
@@ -234,7 +234,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 #menuToggle input:checked ~ ul
 {
   transform: none;
-}
+} */
 
         </style>
 
@@ -295,73 +295,45 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <header class="header">
   <div class="header_body">
     <div class="header-left">
+
       
         
-      <nav role="navigation">
+  
+    
+ 
+    
+
+    
+	   <nav role="navigation">
   <div id="menuToggle">
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
+    
     <input type="checkbox" />
     
-    <!--
-    Some spans to act as a hamburger.
     
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
     <span></span>
     <span></span>
     <span></span>
     
-    <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
+    
     <ul id="menu">
-      <a href="#"><li>Home</li></a>
-      <a href="#"><li>About</li></a>
-      <a href="#"><li>Info</li></a>
-      <a href="#"><li>Contact</li></a>
-      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+      <a href="#"><li>Главное</li></a>
+      <a href="#"><li>Модель OSI</li></a>
+      <a href="#"><li>Модель TCP/IP</li></a>
     </ul>
   </div>
 </nav>
     
-
-    <div class="header-right">
-      
+	
       
       
         
   </div>
 
   <div class="menu-mobile">
-    <div class="menu-mobile_overlay"></div>
+   
 
-    <div class="wrapper">
-      <div class="menu-mobile_inner">
-        <button class="menu-mobile_close-btn"></button>
-        <div class="menu-mobile_header">
-          <nav class="menu-mobile_nav">
-            <ul class="menu-mobile_list">
-              <li
-                class="menu-mobile_list-item ">
-                <a href="https://selectel.ru/blog/all/">Блог</a>
-              </li>
-
-              <li class="menu-mobile_list-item __active">
-                <a href="https://selectel.ru/blog/courses/">Курсы</a>
-              </li>
-              <li class="menu-mobile_list-item ">
-                <a href="https://selectel.ru/blog/events/">Мероприятия</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="menu-mobile_body">
-          <div class="menu-mobile_content">
+    
+    
             
 <nav class="article-sidebar">
       <ul class="article-sidebar__wrapper info-page_sidebar-block">

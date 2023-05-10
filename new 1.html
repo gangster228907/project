@@ -14,7 +14,7 @@
   </script>
   <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
-	<title>2</title>
+	<title>1</title>
 	<meta name="description" content="Открытая сетевая модель OSI (Open Systems Interconnection model) состоит из семи уровней. Что это за уровни и как все устроено — расскажем в статье." />
 	<meta property="og:locale" content="ru_RU" />
 	<meta property="og:type" content="article" />
@@ -106,12 +106,12 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                 animation: bgslide 1s infinite linear;
 
             }
-			#menuToggle
+			 #menuToggle
 {
   display: block;
   position: relative;
   top: 5px;
-  left: 5%;
+  right: 100%
   
   z-index: 2;
   
@@ -234,7 +234,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 #menuToggle input:checked ~ ul
 {
   transform: none;
-}
+} */
 
         </style>
 
@@ -295,30 +295,26 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <header class="header">
   <div class="header_body">
     <div class="header-left">
+
       
         
-      <nav role="navigation">
+  
+    
+ 
+    
+
+    
+	   <nav role="navigation">
   <div id="menuToggle">
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
+    
     <input type="checkbox" />
     
-    <!--
-    Some spans to act as a hamburger.
     
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
     <span></span>
     <span></span>
     <span></span>
     
-    <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
+    
     <ul id="menu">
       <a href="#"><li>Главное</li></a>
       <a href="#"><li>Модель OSI</li></a>
@@ -327,73 +323,37 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
   </div>
 </nav>
     
-
-    <div class="header-right">
-      
+	
       
       
         
   </div>
 
   <div class="menu-mobile">
-    <div class="menu-mobile_overlay"></div>
+   
 
-    <div class="wrapper">
-      <div class="menu-mobile_inner">
-        <button class="menu-mobile_close-btn"></button>
-        <div class="menu-mobile_header">
-          <nav class="menu-mobile_nav">
-            <ul class="menu-mobile_list">
-              <li
-                class="menu-mobile_list-item ">
-                <a href="https://selectel.ru/blog/all/">Блог</a>
-              </li>
-
-              <li class="menu-mobile_list-item __active">
-                <a href="https://selectel.ru/blog/courses/">Курсы</a>
-              </li>
-              <li class="menu-mobile_list-item ">
-                <a href="https://selectel.ru/blog/events/">Мероприятия</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="menu-mobile_body">
-          <div class="menu-mobile_content">
+    
+    
             
 <nav class="article-sidebar">
       <ul class="article-sidebar__wrapper info-page_sidebar-block">
       <li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/index.html">
             <div class="article-sidebar_number __active">1</div>
-      <p class="article-sidebar_text f-18">Принцип устройства сетевой модели</p>
+      <p class="article-sidebar_text f-18"><font  color="red" >Основы TCP/IP</font></p>
           </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 1.html">
             <div class="article-sidebar_number __active">2</div>
-      <p class="article-sidebar_text f-18">Первый, физический уровень (physical layer, L1)</p>
+      <p class="article-sidebar_text f-18">Уровневая модель TCP/IP</p>
           </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 2.html">
             <div class="article-sidebar_number __active">3</div>
-      <p class="article-sidebar_text f-18"><font  color="red" >Второй уровень, канальный (data link layer, L2)</font></p>
+      <p class="article-sidebar_text f-18">Зачем нужен порт и что означает термин «сокет»</p>
           </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 3.html">
             <div class="article-sidebar_number __active">4</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Третий уровень, сетевой (network layer, L3)</font></p>
+      <p class="article-sidebar_text f-18">Что такое DNS и для чего используется эта служба</p>
           </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 4.html">
             <div class="article-sidebar_number __active">5</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Четвертый уровень, транспортный (transport layer, L4)</font></p>
+      <p class="article-sidebar_text f-18">Point-to-Point протоколы</p>
           </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 5.html">
-            <div class="article-sidebar_number __active">6</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Пятый уровень, сеансовый (session layer, L5)</font></p>
-          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 6.html">
-            <div class="article-sidebar_number __active">7</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Шестой уровень, представления данных (presentation layer, L6)</font></p>
-          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 7.html">
-            <div class="article-sidebar_number __active">8</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Седьмой уровень, прикладной (application layer)</font></p>
-          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 8.html">
-            <div class="article-sidebar_number __active">9</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Критика модели OSI</font></p>
-          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 9.html">
-            <div class="article-sidebar_number __active">10</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Вывод, роль модели OSI при построении сетей</font></p>
-          </a></li>    </ul>
+            </li>    </ul>
 
         
 </nav>
@@ -480,45 +440,31 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
       <ul class="article-sidebar__wrapper info-page_sidebar-block">
       <li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/index.html">
             <div class="article-sidebar_number __active">1</div>
-      <p class="article-sidebar_text f-18">Принцип устройства сетевой модели</p>
+      <p class="article-sidebar_text f-18"><font  color="red" >Основы TCP/IP</font></p>
           </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 1.html">
             <div class="article-sidebar_number __active">2</div>
-      <p class="article-sidebar_text f-18">Первый, физический уровень (physical layer, L1)</p>
+      <p class="article-sidebar_text f-18">Уровневая модель TCP/IP</p>
           </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 2.html">
             <div class="article-sidebar_number __active">3</div>
-      <p class="article-sidebar_text f-18"><font  color="red" >Второй уровень, канальный (data link layer, L2)</font></p>
+      <p class="article-sidebar_text f-18">Зачем нужен порт и что означает термин «сокет»</p>
           </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 3.html">
             <div class="article-sidebar_number __active">4</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Третий уровень, сетевой (network layer, L3)</font></p>
-          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 4.html">
+      <p class="article-sidebar_text f-18">Что такое DNS и для чего используется эта служба</p>
+          </a></li><li ><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 4.html">
             <div class="article-sidebar_number __active">5</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Четвертый уровень, транспортный (transport layer, L4)</font></p>
-          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 5.html">
-            <div class="article-sidebar_number __active">6</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Пятый уровень, сеансовый (session layer, L5)</font></p>
-          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 6.html">
-            <div class="article-sidebar_number __active">7</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Шестой уровень, представления данных (presentation layer, L6)</font></p>
-          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 7.html">
-            <div class="article-sidebar_number __active">8</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Седьмой уровень, прикладной (application layer)</font></p>
-          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 8.html">
-            <div class="article-sidebar_number __active">9</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Критика модели OSI</font></p>
-          </a></li><li class="article-sidebar_item"><a data-scroll-to class="article-sidebar_item" href="https://gangster228907.github.io/project/новый 9.html">
-            <div class="article-sidebar_number __active">10</div>
-      <p class="article-sidebar_text f-18"><font  color="" >Вывод, роль модели OSI при построении сетей</font></p>
-          </a></li>    </ul>
+      <p class="article-sidebar_text f-18">Point-to-Point протоколы</p>
+          </a></li><li ></li><li ></li><li ></li><li ></li><li ></li>    </ul>
 
         
 </nav>
+
       <div class="info-page_content">
         
 <section class="article-content">
   <div class="article-content_header">
     <div class="">
       
-     <h2 id="data-link-layer">Второй уровень, канальный (data link layer, L2)</h2>
+     <h2 id="anchor1">Руководство по стеку протоколов TCP/IP</h2>
             
     </div>
 	
@@ -536,47 +482,19 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
       </a>
       </div>
 
-   
+       
     
   <div class="article-content_content">
     
+<p>Стек протоколов TCP/IP (Transmission Control Protocol/Internet Protocol, протокол управления передачей/протокол интернета) — сетевая модель, описывающая процесс передачи цифровых данных. Она названа по двум главным протоколам, по этой модели построена глобальная сеть интернет. Сейчас это кажется невероятным, но в 1970-х информация не могла быть передана из одной сети в другую. Чтобы обеспечить такую возможность, был разработан стек интернет-протоколов, известный как TCP/IP.</br></br>
 
-<img  src="https://skillbox.ru/upload/setka_images/12504801092022_57b34fec8ba88110ee3bbc347f3092624b4f2459.png"
-width="50%"
-height="50%"
-           alt="Изображение записи">
+Разработка сетевой модели осуществлялась при содействии Министерства обороны США, поэтому иногда модель TCP/IP называют DoD (Department of Defence) модель. Если вы знакомы с моделью OSI, то вам будет проще понять построение модели TCP/IP, потому что обе модели имеют деление на уровни, внутри которых действуют определенные протоколы и выполняются собственные функции. Я разделил статью на смысловые части, чтобы было проще понять, как устроена модель TCP/IP:</p>
 
 
-
-<p>Когда два пользователя находятся в одной сети, состоящей только из двух устройств, — это идеальный случай. Но что если этих устройств больше?</p>
-
-
-
-<p>Второй уровень решает проблему адресации при передаче информации. Канальный уровень получает биты и превращает их в кадры (frame, также «фреймы»). Задача здесь — сформировать кадры с адресом отправителя и получателя, после чего отправить их по сети.</p>
-
-
-
-<p>У канального уровня есть два подуровня — это MAC и LLC. MAC (Media Access Control, контроль доступа к среде) отвечает за присвоение физических MAC-адресов, а LLC (Logical Link Control, контроль логической связи) занимается проверкой и исправлением данных, управляет их передачей. Для упрощения мы указываем LLC на втором уровне модели, но, если быть точными, LLC нельзя отнести полностью ни к первому, ни ко второму уровню — он между.</p>
-
-
-
-<p>На втором уровне OSI работают коммутаторы, их задача — передать сформированные кадры от одного устройства к другому, используя в качестве адресов только физические MAC-адреса.</p>
-
-
-
-<p>На канальном уровне активно используется протокол ARP (Address Resolution Protocol — протокол определения адреса). С помощью него 64-битные MAC-адреса сопоставляются с 32-битными IP-адресами и наоборот, тем самым обеспечивается инкапсуляция и декапсуляция данных.</p>
-
-
-<img  src="https://skillbox.ru/upload/setka_images/09273702092022_70093120a3a547d0e09b380d233b3b19b49dae5a.png"
-width="50%"
-height="50%"
-           alt="Изображение записи">
-
-
-
+<img class="article-content_big-img" loading="lazy" src="https://selectel.ru/blog/wp-content/uploads/2020/11/PR-14648_image1.png"
+          >
 
 </section>
-
 
   <div class="course-change">
 
